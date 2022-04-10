@@ -2,17 +2,17 @@ $(document).ready(function() {
   $("form#selector").submit(function(event) {
     event.preventDefault();
 
-    const qOneInput=parseInt($("#q1").val());
-    const qTwoInput=parseInt($("#q2").val());
-    const qThreeInput=parseInt($("#q3").val());
-    const qFourInput=parseInt($("#q4").val());
-    const qFiveInput=parseInt($("#q5").val());
+    const qOneInput = parseInt($("input:radio[name=q1]:checked").val());
+    const qTwoInput = parseInt($("input:radio[name=q2]:checked").val());
+    const qThreeInput = parseInt($("input:radio[name=q3]:checked").val());
+    const qFourInput = parseInt($("input:radio[name=q4]:checked").val());
+    const qFiveInput = parseInt($("input:radio[name=q5]:checked").val());
 
-    $("#q1").append(qOneInput);
-    $("#q2").append(qTwoInput);
-    $("#q3").append(qThreeInput);
-    $("#q4").append(qFourInput);
-    $("#q5").append(qFiveInput);
+    $("#q1").text(qOneInput);
+    $("#q2").text(qTwoInput);
+    $("#q3").text(qThreeInput);
+    $("#q4").text(qFourInput);
+    $("#q5").text(qFiveInput);
 
     const final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
     if (final <=5) {
