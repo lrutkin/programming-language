@@ -10,11 +10,11 @@ $(document).ready(function() {
 
     const final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
     if (final <=5) {
-      $("#resultRuby").show();
+      alert("You should study Ruby!");
     } else if (final <=10){
-      $("#resultJavaScript").show();
+      alert("You should study JavaScript!")
     } else 
-      $("#resultC").show();
-      
+      alert("You should study C#!")
+
   });
 });
