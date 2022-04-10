@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("form#selector").submit(function(event) {
     event.preventDefault();
 
-    const nameInput = $("input#name").val();
+    const nameInput = $("input#name").val(); 
     const rubyResult = "Ruby, not to be confused with the gem";
     const javaScriptResult = "JavaScript, the same language that powers this quiz";
     const pythonResult = "Python, which is more than just a large snake";
@@ -27,7 +27,7 @@ $(document).ready(function() {
 
     $(".name").text(nameInput);
 
-    $("#resultLanguage").show();
+    $("#resultLanguage").show(); 
 
   });
 });
