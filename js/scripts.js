@@ -2,13 +2,15 @@ $(document).ready(function() {
   $("form#selector").submit(function(event) {
     event.preventDefault();
 
-    const qOneInput=parseInt($("#q1").val());
-    const qTwoInput=parseInt($("#q2").val());
-    const qThreeInput=parseInt($("#q3").val());
-    const qFourInput=parseInt($("#q4").val());
-    const qFiveInput=parseInt($("#q5").val());
+    const nameInput = $("input#name").val();
 
-    const final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
+    const q1Input=parseInt($("#q1").val());
+    const q2Input=parseInt($("#q2").val());
+    const q3Input=parseInt($("#q3").val());
+    const q4Input=parseInt($("#q4").val());
+    const q5Input=parseInt($("#q5").val());
+
+    const final=q1Input+q2Input+q3Input+q4Input+q5Input
 
     if (final <=5) {
       $("#resultRuby").show();
@@ -16,6 +18,8 @@ $(document).ready(function() {
       $("#resultJavaScript").show();
     } else 
       $("#resultC").show();
+
+    $(".name").text(nameInput);
 
   });
 });
