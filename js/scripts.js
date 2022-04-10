@@ -6,6 +6,7 @@ $(document).ready(function() {
     const rubyResult = "Ruby, not to be confused with the gem";
     const javaScriptResult = "JavaScript, the same language that powers this quiz";
     const pythonResult = "Python, which is more than just a large snake";
+    const cResult = "C#, a programming language and a musical note"
 
     const q1Input=parseInt($("#q1").val());
     const q2Input=parseInt($("#q2").val());
@@ -19,8 +20,10 @@ $(document).ready(function() {
       $(".result").text(rubyResult);
     } else if (final <=13){
       $(".result").text(javaScriptResult);
-    } else 
+    } else if (final <=18){
       $(".result").text(pythonResult);
+    } else 
+      $(".result").text(cResult);
 
     $(".name").text(nameInput);
 
