@@ -9,12 +9,17 @@ $(document).ready(function() {
     const qFiveInput=parseInt($("#q5").val());
 
     const final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
+
     if (final <=5) {
-      alert("You should study Ruby!");
+      $("#resultRuby").show();
     } else if (final <=10){
-      alert("You should study JavaScript!")
+      $("resultJavaScript").show();
     } else 
-      alert("You should study C#!")
+      $("#resultC").show();
+
+    $("#resultRuby").text(final)
+    $("#resultJavaScript").text(final)
+    $("#resultC").text(final)
 
   });
 });
