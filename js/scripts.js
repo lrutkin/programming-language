@@ -14,10 +14,10 @@ $(document).ready(function() {
     $("#q4").text(qFourInput);
     $("#q5").text(qFiveInput);
 
-    const final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
-    if (final <=5) {
+    const finalResult=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
+    if (finalResult <=5) {
       $("#resultRuby").show();
-    } else if (final <=10){
+    } else if (finalResult <=10){
       $("#resultJavaScript").show();
     } else 
       $("#resultC").show();
