@@ -13,11 +13,11 @@ $(document).ready(function() {
     const final=q1Input+q2Input+q3Input+q4Input+q5Input
 
     if (final <=5) {
-      $("#resultRuby").show();
+      $(".result").text("Ruby");
     } else if (final <=10){
-      $("#resultJavaScript").show();
+      $(".result").text("JavaScript");
     } else 
-      $("#resultC").show();
+      $(".result").text("C#");
 
     $(".name").text(nameInput);
 
