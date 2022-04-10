@@ -8,12 +8,6 @@ $(document).ready(function() {
     const qFourInput=parseInt($("#q4").val());
     const qFiveInput=parseInt($("#q5").val());
 
-    $("#q1").append(qOneInput);
-    $("#q2").append(qTwoInput);
-    $("#q3").append(qThreeInput);
-    $("#q4").append(qFourInput);
-    $("#q5").append(qFiveInput);
-
     const final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
     if (final <=5) {
       $("#resultRuby").show();
@@ -21,6 +15,6 @@ $(document).ready(function() {
       $("#resultJavaScript").show();
     } else 
       $("#resultC").show();
-
+      
   });
 });
