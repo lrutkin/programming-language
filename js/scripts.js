@@ -8,6 +8,12 @@ $(document).ready(function() {
     const qFourInput=parseInt($("#q4").val());
     const qFiveInput=parseInt($("#q5").val());
 
+    $("#q1").text(qOneInput);
+    $("#q2").text(qTwoInput);
+    $("#q3").text(qThreeInput);
+    $("#q4").text(qFourInput);
+    $("#q5").text(qFiveInput);
+
     let final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
     if (final <=5) {
       $("#resultRuby").show();
