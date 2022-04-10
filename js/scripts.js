@@ -13,13 +13,9 @@ $(document).ready(function() {
     if (final <=5) {
       $("#resultRuby").show();
     } else if (final <=10){
-      $("resultJavaScript").show();
+      $("#resultJavaScript").show();
     } else 
       $("#resultC").show();
-
-    $("#resultRuby").text(final)
-    $("#resultJavaScript").text(final)
-    $("#resultC").text(final)
 
   });
 });
