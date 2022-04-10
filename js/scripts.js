@@ -3,6 +3,9 @@ $(document).ready(function() {
     event.preventDefault();
 
     const nameInput = $("input#name").val();
+    const rubyResult = "Ruby";
+    const javaScriptResult = "JavaScript";
+    const pythonResult = "Python";
 
     const q1Input=parseInt($("#q1").val());
     const q2Input=parseInt($("#q2").val());
@@ -13,13 +16,15 @@ $(document).ready(function() {
     const final=q1Input+q2Input+q3Input+q4Input+q5Input
 
     if (final <=5) {
-      $(".result").text("Ruby");
+      $(".result").text(rubyResult);
     } else if (final <=10){
-      $(".result").text("JavaScript");
+      $(".result").text(javaScriptResult);
     } else 
-      $(".result").text("C#");
+      $(".result").text(pythonResult);
 
     $(".name").text(nameInput);
+
+    $("#resultLanguage").show();
 
   });
 });
