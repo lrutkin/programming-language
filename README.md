@@ -14,7 +14,7 @@
 
 _This webpage shows a 5 question quiz, which will show users a different programming language that they can learn depending on their answers._
 
-_A live version of the Programming Language Selector can be found [at this link](https://lrutkin.github.io/programming-language/).
+_A live version of the Programming Language Selector can be found [at this link](https://lrutkin.github.io/programming-language/)._
 
 ## Setup/Installation Requirements
 
