@@ -8,18 +8,19 @@ $(document).ready(function() {
     const qFourInput=parseInt($("#q4").val());
     const qFiveInput=parseInt($("#q5").val());
 
-    $("#q1").text(qOneInput);
-    $("#q2").text(qTwoInput);
-    $("#q3").text(qThreeInput);
-    $("#q4").text(qFourInput);
-    $("#q5").text(qFiveInput);
+    $("#q1").append(qOneInput);
+    $("#q2").append(qTwoInput);
+    $("#q3").append(qThreeInput);
+    $("#q4").append(qFourInput);
+    $("#q5").append(qFiveInput);
 
-    let final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
+    const final=qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput
     if (final <=5) {
       $("#resultRuby").show();
     } else if (final <=10){
       $("#resultJavaScript").show();
     } else 
       $("#resultC").show();
+
   });
 });
