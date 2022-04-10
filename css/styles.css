@@ -1,3 +1,32 @@
 #resultLanguage {
   display:none;
 }
+
+body {
+  background-color: lightgrey;
+  color: darkcyan;
+  font-family:'Courier New', Courier, monospace;
+  margin: 20px;
+}
+
+.container {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
+.btn {
+  display: block;
+  font-weight: bold;
+  color: white;
+  background-color: darkcyan;
+  margin: 5px;
+}
+
+.btn:hover {
+  color: white;
+}
+
+select {
+  color: darkslategrey;
+}
